@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dövüş Oyunu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="lobby">
+  <h1>DÖVÜŞ OYUNU</h1>
+  <input id="room" placeholder="Oda kodu (ör: ana)" maxlength="16" value="ana">
+  <div id="chars">
+    <button data-ch="kaan" class="sel" style="--c:#e63946"><b>Kaan</b><small>Dengeli · Ateş topu</small></button>
+    <button data-ch="zeynep" style="--c:#2ec4b6"><b>Zeynep</b><small>Hızlı · Atılma</small></button>
+    <button data-ch="demir" style="--c:#f4a261"><b>Demir</b><small>Ağır · Yükselen yumruk</small></button>
+  </div>
+  <button id="join">Odaya Gir</button>
+  <p class="help">W zıpla · A/D hareket · S eğil · I hafif · O orta · P ağır<br>
+  Geri tuşu = blok · S basılıyken ileri + I/O/P = özel hamle</p>
+</div>
+<canvas id="cv" width="1280" height="720" hidden></canvas>
+<script src="/socket.io/socket.io.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

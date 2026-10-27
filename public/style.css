@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #0d0d14; color: #eee; font-family: system-ui, sans-serif;
+  min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+#lobby { text-align: center; max-width: 560px; padding: 20px; }
+h1 { letter-spacing: 6px; margin-bottom: 24px; }
+input { padding: 12px; font-size: 16px; border-radius: 8px; border: 1px solid #444;
+  background: #1a1a26; color: #fff; text-align: center; width: 240px; }
+#chars { display: flex; gap: 12px; justify-content: center; margin: 20px 0; flex-wrap: wrap; }
+#chars button { background: #1a1a26; color: #fff; border: 2px solid #333; border-top: 6px solid var(--c);
+  border-radius: 10px; padding: 14px; width: 160px; cursor: pointer; display: flex; flex-direction: column; gap: 6px; }
+#chars button.sel { border-color: var(--c); background: #262638; }
+#chars small { color: #aaa; }
+#join { padding: 12px 36px; font-size: 18px; border: 0; border-radius: 8px; background: #e63946; color: #fff; cursor: pointer; }
+.help { color: #888; font-size: 14px; line-height: 1.6; }
+canvas { width: min(100vw, 177.78vh); height: auto; background: #000; }
